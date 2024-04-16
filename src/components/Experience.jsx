@@ -7,7 +7,6 @@ import reactImage from "../assets/react.png";
 import node from "../assets/node.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
-import bootstrap from '../assets/bootstrap.png';
 
 const Experience = () => {
   const techs = [
