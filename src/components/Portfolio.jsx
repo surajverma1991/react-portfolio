@@ -30,9 +30,9 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white"
+      className="w-full h-full bg-gradient-to-b from-black to-gray-800 text-white"
     >
-      <div className="w-full h-full max-w-screen-lg mx-auto p-4 flex flex-col justify-center">
+      <div className="w-full h-full max-w-screen-lg mx-auto p-4 flex flex-col justify-center pt-28">
         <div className=" pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio

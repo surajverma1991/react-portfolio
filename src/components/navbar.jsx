@@ -29,7 +29,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 text-white bg-black fixed px-4">
+    <div className="flex justify-between items-center w-full h-20 text-white bg-black fixed px-4 z-0">
       <Link to="home" smooth duration={500}>
         <h1 className="text-5xl font-signature ml-2 cursor-pointer">Suraj</h1>
       </Link>
