@@ -1,62 +1,42 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import firstPortfolio from "../assets/portfolio/firstPortfolio.png";
+import resturant from "../assets/portfolio/resturant.jpg";
+import javascriptExit from "../assets/portfolio/exit-pop.png";
 
 const Portfolio = () => {
   const portfolio = [
     {
       id: 1,
-      src: arrayDestruct,
-      demoLink: 'https://www.linkedin.com/in/suraj-verma-8498b4142/',
-      codeLink: 'https://github.com/'
+      src: resturant,
+      demoLink: "https://surajverma1991.github.io/restaurant-react/",
+      codeLink: "https://github.com/surajverma1991/restaurant-react/",
     },
     {
       id: 2,
-      src: installNode,
-      demoLink: '',
-      codeLink: ''
+      src: firstPortfolio,
+      demoLink:
+        "https://surajverma1991.github.io/personal-portfolio-latest-2023/",
+      codeLink:
+        "https://github.com/surajverma1991/personal-portfolio-latest-2023",
     },
     {
       id: 3,
-      src: navbar,
-      demoLink: '',
-      codeLink: ''
-    },
-    {
-      id: 4,
-      src: reactParallax,
-      demoLink: '',
-      codeLink: ''
-    },
-    {
-      id: 5,
-      src: reactSmooth,
-      demoLink: '',
-      codeLink: ''
-    },
-    {
-      id: 6,
-      src: reactWeather,
-      demoLink: '',
-      codeLink: ''
+      src: javascriptExit,
+      demoLink: "https://surajverma1991.github.io/exit-popup-app-javascript/",
+      codeLink: "https://github.com/surajverma1991/exit-popup-app-javascript",
     },
   ];
 
   return (
     <div
       name="portfolio"
-      className=" bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
+      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white"
     >
-      <div className=" max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="w-full h-full max-w-screen-lg mx-auto p-4 flex flex-col justify-center">
         <div className=" pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
           </p>
-
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
@@ -69,12 +49,20 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 duration-200 hover:scale-105">
+                <a
+                  href={demoLink}
+                  target="blank"
+                  className="w-1/2 px-6 py-3 duration-200 hover:scale-105"
+                >
                   Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 duration-200 hover:scale-105">
+                </a>
+                <a
+                  href={codeLink}
+                  target="blank"
+                  className="w-1/2 px-6 py-3 duration-200 hover:scale-105 text-right"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}

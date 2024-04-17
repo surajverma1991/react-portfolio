@@ -7,6 +7,7 @@ import reactImage from "../assets/react.png";
 import node from "../assets/node.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import scss from "../assets/scss.png";
 
 const Experience = () => {
   const techs = [
@@ -24,44 +25,50 @@ const Experience = () => {
     },
     {
       id: 3,
-      src: javascript,
-      title: "JavaScript",
-      style: "shadow-yellow-500",
+      src: scss,
+      title: "SCSS",
+      style: "shadow-pink-400",
     },
     {
       id: 4,
-      src: reactImage,
-      title: "React",
-      style: "shadow-blue-600",
-    },
-    {
-      id: 5,
       src: tailwind,
       title: "Tailwind",
       style: "shadow-sky-400",
     },
     {
+      id: 5,
+      src: javascript,
+      title: "JavaScript",
+      style: "shadow-yellow-500",
+    },
+    {
       id: 6,
-      src: github,
-      title: "GitHub",
-      style: "shadow-gray-400",
+      src: reactImage,
+      title: "React",
+      style: "shadow-blue-600",
     },
     {
       id: 7,
       src: node,
       title: "Node",
+      style: "shadow-green-400",
+    },
+    {
+      id: 8,
+      src: github,
+      title: "GitHub",
       style: "shadow-gray-400",
-    }
+    },
   ];
 
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+      <div className="w-full h-full max-w-screen-lg mx-auto p-4 flex flex-col justify-center text-white">
         <div>
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Experience
           </p>
           <p className="py-6">These are the technologies I've worked with</p>
