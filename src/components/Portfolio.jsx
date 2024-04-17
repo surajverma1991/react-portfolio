@@ -1,29 +1,43 @@
 import React from "react";
-import firstPortfolio from "../assets/portfolio/firstPortfolio.png";
-import resturant from "../assets/portfolio/resturant.jpg";
+import firstPortfolio from "../assets/portfolio/resturant-html.png";
+import resturant from "../assets/portfolio/resturant-react.png";
 import javascriptExit from "../assets/portfolio/exit-pop.png";
+import htmlImage from "../assets/html.png";
+import cssImage from "../assets/css.png";
+import javascriptImage from "../assets/javascript.png";
+import reactImage from "../assets/react.png";
 
 const Portfolio = () => {
   const portfolio = [
     {
       id: 1,
-      src: resturant,
-      demoLink: "https://surajverma1991.github.io/restaurant-react/",
-      codeLink: "https://github.com/surajverma1991/restaurant-react/",
+      src: firstPortfolio,
+      demoLink:
+        "https://surajverma1991.github.io/website-for-restaurants-bootstrap/",
+      codeLink:
+        "https://github.com/surajverma1991/website-for-restaurants-bootstrap",
+      lang: {
+        htmlData: htmlImage,
+        cssData: cssImage,
+      },
     },
     {
       id: 2,
-      src: firstPortfolio,
-      demoLink:
-        "https://surajverma1991.github.io/personal-portfolio-latest-2023/",
-      codeLink:
-        "https://github.com/surajverma1991/personal-portfolio-latest-2023",
-    },
-    {
-      id: 3,
       src: javascriptExit,
       demoLink: "https://surajverma1991.github.io/exit-popup-app-javascript/",
       codeLink: "https://github.com/surajverma1991/exit-popup-app-javascript",
+      lang: {
+        javascriptData: javascriptImage,
+      },
+    },
+    {
+      id: 3,
+      src: resturant,
+      demoLink: "https://surajverma1991.github.io/restaurant-react/",
+      codeLink: "https://github.com/surajverma1991/restaurant-react/",
+      lang: {
+        reactData: reactImage,
+      },
     },
   ];
 
@@ -41,8 +55,21 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolio.map(({ id, src, demoLink, codeLink }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+          {portfolio.map(({ id, src, demoLink, codeLink, lang }) => (
+            <div
+              key={id}
+              className="shadow-md shadow-gray-600 rounded-lg relative"
+            >
+              <div className="absolute top-2 right-2 z-10 w-4 h-4 flex gap-1 flex-row-reverse">
+                {Object.entries(lang).map(([id, dataImage]) => (
+                  <img
+                    key={id}
+                    src={dataImage}
+                    alt={`${id} Icon`}
+                    className="w-4 h-4"
+                  />
+                ))}
+              </div>
               <img
                 src={src}
                 alt=""
