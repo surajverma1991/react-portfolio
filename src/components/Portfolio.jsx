@@ -50,7 +50,7 @@ const Portfolio = () => {
           id: 1,
           src: weatherReact,
           demoLink:
-            "https://weather-reactjs1.netlify.app/",
+            "https://weather-infom-reactjs.netlify.app/",
           codeLink:
             "https://github.com/surajverma1991/TodoList-React",
           lang: {
@@ -61,7 +61,7 @@ const Portfolio = () => {
           id: 2,
           src: todoList,
           demoLink:
-            "https://suraj-react-todo.netlify.app/",
+            "https://todolists-reactjs.netlify.app/",
           codeLink:
             "https://github.com/surajverma1991/weather-react-project",
           lang: {
@@ -71,7 +71,7 @@ const Portfolio = () => {
         {
           id: 3,
           src: resturant,
-          demoLink: "https://surajverma1991.github.io/restaurant-react/",
+          demoLink: "https://restaurant-sites-reactjs.netlify.app/",
           codeLink: "https://github.com/surajverma1991/restaurant-react/",
           lang: {
             reactData: reactImage,
@@ -95,8 +95,8 @@ const Portfolio = () => {
         </div>
 
         {portfolio.map(({ id, title, portfolioList }) => (
-          <div key={id}>
-            <h2 className="py-6 font-bold">{title}</h2>
+          <div key={id} className="mb-10">
+            <h1 className="py-7 font-bold text-2xl">{title}</h1>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
               {portfolioList.map(({ id, src, demoLink, codeLink, lang }) => (
                 <div
