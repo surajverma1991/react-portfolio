@@ -12,61 +12,15 @@ const About = () => {
             About
           </p>
         </div>
-        <p className="text-xl"></p>
-
-        <ul>
-          <li>
-            6+ years hands on experience in HTML5, CSS3, BEM, SCSS, and
-            Bootstrap.
-          </li>
-          <li>3 years hands on experience in JavaScript, jQuery.</li>
-          <li>
-            2 years hands on experience in UI designing tools such as Figma,
-            Adobe XD, Zeplin.
-          </li>
-          <li>
-            2 year hands on experience in data transfer web technologies such as
-            XML, JSON.
-          </li>
-          <li>
-            2 year hands on experience in WordPress. and 8 months experience in
-            AEM (UI).
-          </li>
-          <li> 2 year hands on experience in ES6, ReactJS.</li>
-          <li>
-            1 year hands on experience in Typescript, Angular v12, Angular
-            Material.
-          </li>
-          <li>
-            Working Knowledge of version control tools such as SVN, FTP, Git,
-            Github Desktop, and Visual Studio Code.
-          </li>
-          <li>
-            Working Knowledge of agile project management methodology tools such
-            as Jira Software, Azure DevOps.{" "}
-          </li>
-          <li>
-            Working Knowledge of Text Editor and IDE's such as ­ Visual Studio
-            Code, Sublime Text and Visual Studio 2022.
-          </li>
-          <li>
-            Experience on projects in eLearning domain, UI development
-            start­ups.
-          </li>
-          <li>
-            Having Core competency in Design & Development in eLearning and IT
-            Sector domain.
-          </li>
-          <li>
-            Worked as Project Lead and Manager with extensive experience on
-            development of packaged products.
-          </li>
-          <li>
-            Teaming and collaboration: Specialize in creating cross­functional,
-            cross-organizational teams with the customer to identify,
-            prioritize, and design solutions for business requirements.
-          </li>
-        </ul>
+        <p className="text-xl">
+          Dynamic and skilled Senior UI developer with 6+ years of experience
+          designing and implementing user interfaces for web applications.
+          Proficient in HTML, CSS, and Javascript using a modern library such as
+          React JS. Collaborative teams with exceptional skills in integrating
+          user interface designs with back­end services, implementing
+          accessibility standards, and optimizing user experience.
+        </p>
+        <p></p>
       </div>
     </div>
   );
