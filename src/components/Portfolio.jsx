@@ -3,7 +3,9 @@ import firstPortfolio from "../assets/portfolio/resturant-html.png";
 import resturant from "../assets/portfolio/resturant-react.png";
 import javascriptExit from "../assets/portfolio/exit-pop.png";
 import weatherReact from "../assets/portfolio/weather-react.png"
-import todoList from "../assets/portfolio/todo-list.png"
+import todoList from "../assets/portfolio/todo-list.png";
+import dashBoard from "../assets/portfolio/dashboard.png"
+
 
 // lang. icon
 import htmlImage from "../assets/html.png";
@@ -77,6 +79,15 @@ const Portfolio = () => {
             reactData: reactImage,
           },
         },
+        {
+          id: 4,
+          src: dashBoard,
+          demoLink: "https://dashboard-admin-panel-react.netlify.app/",
+          codeLink: "https://github.com/surajverma1991/react-responsive-admin-dashboard-panel/",
+          lang: {
+            reactData: reactImage,
+          },
+        },
       ],
     },
   ];
@@ -121,14 +132,14 @@ const Portfolio = () => {
                   <div className="flex items-center justify-center">
                     <a
                       href={demoLink}
-                      target="blank"
+                      target="_blank" rel="noreferrer"
                       className="w-1/2 px-6 py-3 duration-200 hover:scale-105"
                     >
                       Demo
                     </a>
                     <a
                       href={codeLink}
-                      target="blank"
+                      target="_blank" rel="noreferrer"
                       className="w-1/2 px-6 py-3 duration-200 hover:scale-105 text-right"
                     >
                       Code
